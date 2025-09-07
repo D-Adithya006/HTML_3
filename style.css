@@ -1,27 +1,25 @@
-/* Reset some basics */
 body, h1, h2, p {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+  line-height: 1.2;
   background: #f1f5f9;
    background-image: url(Bg1.png);
         background-repeat: no-repeat;
         background-size: cover;
 }
 
-/* Header */
 header {
-  background-color: #040402; 
+  background-color: #030300; 
     color: #f1f1ebe0; 
     padding: 1rem; 
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .logo img {
   height: auto;
@@ -29,11 +27,11 @@ header {
 }
 .text-placement {
   font-size: 30px;
-  
-  text-align: left;
+  text-align: center;
+  /*padding-right:600px;*/
+  font-size: 35px;  
 }
 
-/* Main page */
 main {
   display: flex;
   flex-direction: column;
@@ -43,12 +41,18 @@ main {
   text-align: center;
 }
 main p {
-  font-size: 30px;;
+  font-size: 20px;;
   color: #f1f5f9;
   margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Button links (used in index page) */
+main h1 {
+    color:#f5e7e7;
+    text-align:start;
+    padding-bottom: 75px;
+}
+
 .btn-link {
   display: inline-block;
   background-color: #000;
@@ -58,13 +62,12 @@ main p {
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 .btn-link:hover {
   background-color: #333;
 }
 
-/* Form wrapper */
 .form-wrapper {
   display: flex;
   justify-content: center;
@@ -72,7 +75,6 @@ main p {
   min-height: calc(100vh - 200px);
 }
 
-/* Forms */
 form {
   max-width: 400px;
   width: 100%;
@@ -86,12 +88,12 @@ form {
   padding: 12px;
 }
 .alt-bg {
-  background-color: #e7d9d9;
+  background-color: #a67b7b;
 }
 
-/* Inputs */
 input[type=text], 
-input[type=password] {
+input[type=password],
+input[type=email] {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
@@ -100,7 +102,6 @@ input[type=password] {
   border-radius: 4px;
 }
 
-/* Buttons (black with white text) */
 button {
   background-color: #000;
   color: white;
@@ -111,14 +112,16 @@ button {
   width: 100%;
   border-radius: 4px;
   font-weight: bold;
-  transition: background 0.3s;
+  transition:  0.3s;
 }
 button:hover {
-  background-color: #333;
+  background-color: #766161;
 }
 .cancelbtn {
-  background-color: #ac6f69;
-  width: auto;
+  background-color: #d63829;
   border: none;
-  padding: 10px 18px;
+  padding: 10px 20px;
+    text-align: center;
 }
+
+
